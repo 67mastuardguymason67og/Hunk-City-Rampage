@@ -1,0 +1,31 @@
+# Hunk City Rampage
+
+A single-file, 2D side-scrolling beat 'em up in the style of late-80s arcade classics (Double Dragon II, Final Fight), built with plain HTML5 Canvas + JavaScript — no build tools, no dependencies.
+
+## How to play locally
+Just double-click `index.html`, or open it in any modern browser.
+
+## Controls
+**Keyboard (desktop):**
+- **Arrow keys or WASD** — move (switch scheme with the on-screen toggle) — left/right/up/down for depth
+- **Z** — punch/kick combo (punch, punch, kick)
+- **X or Space** — jump
+- **Z while airborne** — jump-kick
+- **Enter** — start / restart
+
+**Touch (mobile):** on-screen D-pad (bottom-left) for movement, **JUMP** and **HIT** buttons (bottom-right), and tap anywhere to start/restart. The touch controls appear automatically on touch devices.
+
+Walk into smashed crates/cans to auto-pick-up the **buck-chuckets** (limited-use AOE weapon).
+
+## Deploying to GitHub Pages
+1. Create a new GitHub repository (e.g. `hunk-city-rampage`).
+2. Add `index.html` (from this folder) to the repo root and commit/push it.
+3. In the repo, go to **Settings → Pages**.
+4. Under "Build and deployment", set **Source** to `Deploy from a branch`, choose the `main` branch and `/ (root)` folder, then **Save**.
+5. GitHub will publish the site at `https://<your-username>.github.io/<repo-name>/` within a minute or two.
+
+That's it — no build step, no npm install, it's a static file.
+
+## Notes
+- All art is drawn procedurally with `<canvas>` (rectangles/shapes styled to evoke chunky 8-bit sprites) — there are no external image/audio assets, so it works instantly on GitHub Pages with zero configuration.
+- Stage 1 (the alleyway) has 3 enemy waves with a classic "screen-lock until cleared" mechanic and a flashing `GO ➔` indicator, ending in a "Stage 1 Clear" screen.
